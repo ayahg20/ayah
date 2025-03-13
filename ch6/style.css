@@ -1,0 +1,88 @@
+/* Ayah Ghazouli */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(0deg, #AA11EA, #374BCE);
+    color: #cbd8e3db;
+}
+/* Header styling */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 4rem;
+}
+/* Navigation bar */
+nav {
+    background-color: #34495e;
+    padding: 1.5rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #d9e8d8;
+    text-decoration: underline;
+}
+/* Main content */
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    background-color: #7f818a;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border: 2px solid #0b0a3f;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #180e51;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #180e51;
+}
+
+section img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}

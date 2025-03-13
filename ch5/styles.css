@@ -1,0 +1,58 @@
+/*Ayah Ghaouli*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d7c7aa;
+}
+header h1{
+    background: #00602b;
+    text-align: center;
+    color: #fff;
+}
+nav{
+    padding: 10px 14px;
+}
+a:link {
+    color: #8b1010;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 16px;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #00602b;
+    background-color: #fff;
+}
+main {
+    font-weight: bold;
+    background-image: url(background.webp);
+    background-repeat: repeat-x;
+}
+img{
+    width: 350px;
+    height: 220px;
+    margin: 14px;
+    box-shadow: 3px 3px 16px rgb(79, 74, 74);
+}
+
+h2, h3{
+    color:#342517;
+}
+ 
+p{
+    color: #230e06; 
+    background-color: #ffffff;
+}
+.highlight{
+    font-weight: bold;
+    color: #ee1e28;
+    font-style: italic;}
+.special-item{
+    background-color: #ffffff;
+}
+footer{
+    text-align:center;
+    color: #bb161d;
+}
+

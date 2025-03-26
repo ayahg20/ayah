@@ -1,0 +1,51 @@
+/* Ayah Ghazouli - 03/25/2025 - File: styles.css */
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+    background-color: #c7abcd;
+    color: #181816;
+    max-width: 800px;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 1em 0;
+}
+
+footer a {
+    color: #007BFF;
+}

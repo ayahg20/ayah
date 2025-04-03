@@ -1,0 +1,103 @@
+/* Resets the browser */
+* {
+    margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+/*wrapper styles Centers the content, sets max width, and adds padding/shadow*/
+.wrapper {
+    width: 95%;
+margin: 0 auto;
+background: white;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px #0000001a;
+}
+/*styles h2*/
+h2 {
+    display: block;
+    color: black;
+    font-size: 1em;
+    text-align: left;
+    margin: 15px 0;
+  }
+  
+/* Body: Sets the overallbackground color, removesmargin/padding, and applies a font */
+Body {
+    background: #e66666;
+color: white;
+text-align: center;
+padding: 20px;
+font-size: 1.5em;
+}
+p {
+    display: block;
+    color: black;
+    font-size: 1em; /* Adjust to a suitable font size */
+    text-align: left;
+    margin: 10px 0;
+  }
+/* header Styles the top section with a red background, white text, and large font */
+header {
+    background: #d5e878;
+color: white;
+text-align: center;
+padding: 20px;
+font-size: 1.5em;
+}
+/* nav Adds a yellow background and centers navigation links*/
+nav{ 
+    background: #368523;
+padding: 10px;
+text-align: center;
+}
+/* a nav Makes links stack naturally on smaller screens */
+a nav{
+    display: inline; 
+text-decoration: none;
+color: black;
+padding: 5px;
+font-weight: bold;
+}
+/* Visited link styling */
+nav a:visited {
+    text-decoration: underline;
+color: #022f02;
+  }
+  /* Colors the nav when the mouse is hovered on text */
+  nav a :hover {
+    background-color: #fff;
+color:#002f02;
+  }
+/* section styling */
+section{
+    float: left;
+width: 50%;
+padding: 10px;
+}
+/* Clears the floats and returns the page to normal flow */
+main:after {
+    content: "";
+display: table;
+clear: both;
+}
+/* img styling */
+img{
+    height: 50%;
+max-width: 70%;
+opacity:.7;
+object-fit: cover;
+}
+/* Makes images responsive and change the images on hover */
+img:hover{border: 1px solid #ddc10f;
+opacity: 1;
+transform: scale( 1.2);
+transition: transform 0.5s ease-in-out;
+}
+/* Footer styling */
+footer {
+    clear: both;
+    background: #d92323;
+    color: white;
+    text-align: center;
+  }

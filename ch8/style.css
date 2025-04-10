@@ -1,0 +1,78 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box; /* Includes padding and border in element width/height */
+}
+
+/* Wrapper */
+#wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Added default font */
+    background: linear-gradient(to right, #80CBC4 50%, rgb(25, 145, 174));
+}
+
+/* Header */
+header {
+    background-image: url('background.jpg'); /* Ensure this image exists in your folder */
+    padding: 1em;
+    text-align: center;
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Ensures images fit within their container */
+    height: auto;
+    display: block;
+    margin: 1em 0; /* Adds vertical margins */
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1; /* Allows main section to expand */
+}
+
+/* Navigation Bar */
+nav {
+    background: #FFAB00;
+    padding: 1em;
+    width: 200px;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+/* Article Section */
+article {
+    padding: 1em;
+    flex-grow: 1; /* Allows article to expand */
+}
+
+/* Footer */
+footer {
+    background: #26A69A;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Details Text */
+.details {
+    color: #4a0963;
+    font-weight: bold;
+    font-family: Arial, sans-serif; /* Consistent font */
+}
+
+/* Navigation Links */
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border

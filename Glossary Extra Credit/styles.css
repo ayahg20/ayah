@@ -1,0 +1,75 @@
+/* Ayah Ghazouli - 05/14/2025 - File: styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    text-align: center;
+    background-color: #ecbef2;
+    color: #ebb4db;
+}
+
+h1 {
+    color: #9dc1e6;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+dl {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #c9dddf;
+    border-radius: 8px;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #7cc1ef;
+}
+
+dd {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #011014;
+}
+
+/* 3 traditional breakpoints */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    dl {
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    dl {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    dl {
+        padding: 10px;
+    }
+
+    dt {
+        font-size: 16px;
+    }
+
+    dd {
+        font-size: 14px;
+    }
+}

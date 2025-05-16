@@ -1,0 +1,75 @@
+<!-- Ayah Ghazouli - 05/05/2025 - File: contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">About Me</a></li>
+                <li><a href="extra.html">Projects</a></li>
+                <li><a href="portfolio.html">My Portfolio</a></li>
+                <li><a href="form.html">Art Submission Form</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="column-container">
+            <div class="column">
+                <h2>Art Submission Form</h2>
+                <form action="#" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="art-type">Type of Artwork:</label>
+                    <select id="art-type" name="art-type">
+                        <option value="sketch">Sketch</option>
+                        <option value="painting">Painting</option>
+                        <option value="digital">Digital Art</option>
+                    </select>
+
+                    <label for="comments">Describe Your Work:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="column">
+                <h2>Contact Me for Art Collaborations</h2>
+                <form action="#" method="POST">
+                    <label for="collab-name">Your Name:</label>
+                    <input type="text" id="collab-name" name="collab-name" required>
+
+                    <label for="collab-email">Your Email:</label>
+                    <input type="email" id="collab-email" name="collab-email" required>
+
+                    <label for="collab-message">Your Inquiry:</label>
+                    <textarea id="collab-message" name="collab-message" rows="4"></textarea>
+
+                    <input type="submit" value="Send Inquiry">
+                    <section>
+                        <img src="apply.jpg" alt="Different color types in artwork" style="width: 30%; height:auto;">
+                    </section>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ayah Ghazouli</p>
+    </footer>
+</body>
+</html>
+

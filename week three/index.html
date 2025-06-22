@@ -1,0 +1,86 @@
+<!-- Ayah Ghazouli, June 13, 2025 -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightruder: A Night Interrupted</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1 id="title">Nightruder: A Night Interrupted</h1>
+    </header>
+
+    <main>
+        <section class="feature">
+            <h2>Game Modes</h2>
+            <p>Play alone or with friends. *Nightruder: A Night Interrupted* offers both single-player and multiplayer options.</p>
+        </section>
+
+        <section class="feature">
+            <h2>Choose Your Hero</h2>
+            <p>Pick from ten different character types, each with special skills to help you win battles.</p>
+        </section>
+
+        <section class="feature">
+            <h2>Huge Open World</h2>
+            <p>Explore a world as big as Yellowstone National Park, full of adventure, secrets, and danger.</p>
+          <img src="nightruder-game.png" alt="Game screenshot from Nightruder" />
+        </section>
+
+        <section class="feature">
+            <h2>Made by Experts</h2>
+           <p>The creators of <em>Nightruder</em> know the people behind <em>Elden Ring</em>, so you can expect top-notch gameplay.</p>
+        </section>
+        </main>
+
+        <footer id="main-footer">
+            <p>From the wild mind of Nebraska's game legend, Ron Ronaldson.</p>
+        </footer>
+        <script>
+      let greeting = "Welcome to the official site for Nightruder: A Night Interrupted!";
+    alert(greeting);
+
+     greeting = "Brace yourself—Nightruder is launching soon.";
+    console.log(greeting);
+
+    let readyToLaunch = false;
+    let preorders = 4538;
+    let promoCopies = 22;
+    const retailPrice = 79;
+
+    console.log(`Nightruder has ${preorders} preorders, looking at $${retailPrice * (preorders - promoCopies)} in sales.`);
+    </script>
+    <script>
+        for (let i = 0; i < document.body.childNodes.length; i++) {
+      // Logs node at each index position
+      console.log(document.body.childNodes[i]);
+    }
+
+    for (let node of document.body.childNodes) {
+      // Logs each node using for...of loop
+      console.log(node);
+    }
+    console.log(document.body.parentNode);
+    console.log(document.body.childNodes);
+    console.log(document.body.firstChild);
+    console.log(document.body.lastChild);
+    console.log(document.body.previousSibling);
+    console.log(document.body.nextSibling);
+
+    console.log(document.body.parentElement);
+    console.log(document.body.children);
+    console.log(document.body.firstElementChild);
+    console.log(document.body.lastElementChild);
+    console.log(document.body.previousElementSibling);
+    console.log(document.body.nextElementSibling);
+    // Create a DOM object
+    const mainHeader = document.querySelector('#main-header');
+    console.log(mainHeader);
+    //console.log(document.body.parentNode);
+    const classSelection = document.querySelectorAll('.feature');
+    console.log(`There are ${classSelection.length} sections of content in our page. The first says: ${classSelection[0].textContent}`);
+    </script>
+</body>
+</html>

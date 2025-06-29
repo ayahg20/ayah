@@ -1,0 +1,70 @@
+<!-- Ayah Ghazouli, June 28, 2025 -->
+<!-- Project 3 script -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nightruder: A Night Interrupted</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1 id="title">Nightruder: A Night Interrupted</h1>
+    </header>
+
+    <main>
+        <section class="feature">
+            <h2>Game Modes</h2>
+            <p>Play alone or with friends. *Nightruder: A Night Interrupted* offers both single-player and multiplayer options.</p>
+        </section>
+
+        <section class="feature">
+            <h2>Choose Your Hero</h2>
+            <p>Pick from ten different character types, each with special skills to help you win battles.</p>
+        </section>
+
+        <section class="feature">
+            <h2>Huge Open World</h2>
+            <p>Explore a world as big as Yellowstone National Park, full of adventure, secrets, and danger.</p>
+            <img src="Nightruder A Night Interrupted.png" alt="Game screenshot from Nightruder">
+        </section>
+
+        <section class="feature">
+            <h2>Made by Experts</h2>
+           <p>The creators of <em>Nightruder</em> know the people behind <em>Elden Ring</em>, so you can expect top-notch gameplay.</p>
+        </section>
+        </main>
+
+        <footer id="main-footer">
+            <p>From the wild mind of Nebraska's game legend, Ron Ronaldson.</p>
+        </footer>
+<script>
+  console.log(document.body);
+  console.dir(document.body);
+
+  const userName = prompt("Hi there! What's your name?");
+  const heading = document.querySelector("h1");
+  if (userName && heading) {
+    heading.textContent = `${userName}, Welcome to Nightruder!`;
+  }
+
+  const preorders = 4538;
+  const repeatedFeatures = document.querySelectorAll(".feature");
+  if (repeatedFeatures.length >= 2) {
+    const secondFeature = repeatedFeatures[1];
+    const totalNotice = document.createElement("h3");
+    totalNotice.className = "preorder-totals";
+    totalNotice.textContent = `There are currently ${preorders} presales sold!`;
+    secondFeature.appendChild(totalNotice);
+  }
+
+  const header = document.querySelector("header");
+  if (header) {
+    header.style.backgroundColor = "#333"; 
+    header.classList.add("highlighted-header"); 
+  }
+</script>
+
+</body>
+</html>

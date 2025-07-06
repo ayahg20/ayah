@@ -1,0 +1,93 @@
+<!-- Ayah Ghazouli, July 05, 2025 -->
+<!-- Project 4: Nightruder - A Night Interrupted -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nightruder: A Night Interrupted</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="main-header">
+    <h1 id="title">Nightruder: A Night Interrupted</h1>
+  </header>
+
+  <main>
+    <section class="feature">
+      <h2>Game Modes</h2>
+      <p>Play alone or with friends. <em>Nightruder: A Night Interrupted</em> offers both single-player and multiplayer options.</p>
+    </section>
+
+    <section class="feature">
+      <h2>Choose Your Hero</h2>
+      <p>Pick from ten different character types, each with special skills to help you win battles.</p>
+    </section>
+
+    <section class="feature">
+      <h2>Huge Open World</h2>
+      <p>Explore a world as big as Yellowstone National Park, full of adventure, secrets, and danger.</p>
+      <img src="Nightruder A Night Interrupted.png" alt="Game screenshot from Nightruder" />
+    </section>
+
+    <section class="feature">
+      <h2>Made by Experts</h2>
+      <p>The creators of <em>Nightruder</em> know the people behind <em>Elden Ring</em>, so you can expect top-notch gameplay.</p>
+    </section>
+
+    <section class="feature" id="spoilers">
+      <h2>Spoiler Section</h2>
+      <ul>
+        <li>The final boss is your own character from the future.</li>
+        <li>The map changes every time you die.</li>
+        <li>The friendly NPC betrays you in the last chapter.</li>
+        <li>The sword you find in level 1 is the key to the ending.</li>
+        <li>The villain is your long-lost sibling.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="main-footer">
+    <p>From the wild mind of Nebraska's game legend, Ron Ronaldson.</p>
+  </footer>
+
+  <script>
+
+    const visitor = prompt("Hi there! What's your name?");
+    const ofAge = confirm("Are you 18 or older?");
+    const heading = document.querySelector("h1");
+
+    /*
+    if (ofAge) {
+      heading.textContent = `${visitor}, Welcome to Nightruder!`;
+    } else {
+      heading.textContent = "Content Limited";
+    }
+    */
+    heading.textContent = ofAge
+      ? `${visitor}, Welcome to Nightruder!`
+      : "Content Limited";
+
+    const preorders = 4538;
+    const repeatedFeatures = document.querySelectorAll(".feature");
+    if (repeatedFeatures.length >= 2) {
+      const secondFeature = repeatedFeatures[1];
+      const totalNotice = document.createElement("h3");
+      totalNotice.className = "preorder-totals";
+      totalNotice.textContent = `There are currently ${preorders} presales sold!`;
+      secondFeature.appendChild(totalNotice);
+    }
+
+    const header = document.querySelector("header");
+    if (header) {
+      header.style.backgroundColor = "#333";
+      header.classList.add("highlighted-header");
+    }
+
+    const wantsSpoilers = confirm("Do you want to see spoilers?");
+    const spoilerSection = document.getElementById("spoilers");
+    spoilerSection.style.display = wantsSpoilers ? "block" : "none";
+  </script>
+</body>
+</html>

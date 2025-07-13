@@ -1,0 +1,63 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px;
+  background-color: #ffe6f0; /* soft rose pink */
+  color: #800040; /* deep pink for main text */
+}
+
+h1, h2 {
+  color: #d63384;
+  text-shadow: 1px 1px 2px #ffb6c1;
+}
+
+label {
+  color: #c71585;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input, select {
+  display: block;
+  width: 250px;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 2px solid #ff69b4;
+  border-radius: 8px;
+  background-color: #fff0f5;
+  color: #800040;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff1493;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(255, 20, 147, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff69b4;
+}
+
+p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #a9346e;
+  background-color: #ffe0eb;
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 300px;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #ff69b4;
+}

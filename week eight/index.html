@@ -1,0 +1,199 @@
+<!-- Ayah Ghazouli, July 19, 2025 -->
+<!-- Week Eight: Nightruder - A Night Interrupted -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nightruder: A Night Interrupted</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="main-header">
+    <h1 id="title">Nightruder: A Night Interrupted</h1>
+  </header>
+
+  <main>
+    <section class="feature">
+      <h2>Game Modes</h2>
+      <p>Play alone or with friends. <em>Nightruder: A Night Interrupted</em> offers both single-player and multiplayer options.</p>
+    </section>
+
+    <section class="feature">
+      <h2>Choose Your Hero</h2>
+      <p>Pick from ten different character types, each with special skills to help you win battles.</p>
+    </section>
+
+    <section class="feature">
+      <h2>Huge Open World</h2>
+      <p>Explore a world as big as Yellowstone National Park, full of adventure, secrets, and danger.</p>
+      <img src="Nightruder A Night Interrupted.png" alt="Game screenshot from Nightruder" />
+    </section>
+
+    <section class="feature">
+      <h2>Made by Experts</h2>
+      <p>The creators of <em>Nightruder</em> know the people behind <em>Elden Ring</em>, so you can expect top-notch gameplay.</p>
+    </section>
+
+    <section class="feature" id="spoilers">
+      <h2>Spoiler Section</h2>
+      <button id="spoiler-btn">See a spoiler!</button>
+      <p id="spoiler-display"></p>
+    </section>
+
+    <section class="feature" id="classes">
+      <h2>Character Classes</h2>
+    </section>
+
+    <section id="roster">
+      <h2>Development Team</h2>
+      <p>Our team poured passion and skill into every pixel! Prepare to meet true legends.</p>
+      <button id="create-roster">Meet the Team</button>
+    </section>
+  </main>
+
+  <footer id="main-footer">
+    <p>From the wild mind of Nebraska's game legend, Ron Ronaldson.</p>
+  </footer>
+
+  <script>
+
+    const characterClasses = [
+      {
+        name: "Warrior",
+        type: "melee",
+        main: "strength",
+        magic: 0,
+        expansion: false,
+        launch: true,
+        summary: `Step into the night swinging blades of thunder! Chop your enemies down as the mighty Warrior.`
+      },{
+        name: "Mage",
+        type: "caster",
+        main: "charisma",
+        magic: 50,
+        expansion: false,
+        launch: true,
+        summary: `Cast the night away with the Mage's mighty spells! Intrude into the souls of enemies like never before.`
+      },{
+        name: "Dogbear",
+        type: "melee",
+        main: "size",
+        magic: 20,
+        expansion: true,
+        launch: true,
+        summary: `Half dog, half bear, half man! Slash'em up fun with ultimate paws and wagging tail!`
+      },{
+        name: "Technomancer",
+        type: "caster",
+        main: "wisdom",
+        magic: 80,
+        expansion: true,
+        launch: false,
+        summary: `Bleep bloop! Program your spells and halt enemy systems with the power of tech wizardry!`
+      }
+    ];
+
+    const listClasses = function() {
+      const container = document.getElementById("classes");
+      for (let cls of characterClasses) {
+        const h3 = document.createElement("h3");
+        h3.textContent = cls.name;
+
+        switch(cls.type) {
+          case "melee":
+            h3.className = "red";
+            break;
+          case "caster":
+            h3.className = "purple";
+            break;
+        }
+
+        container.appendChild(h3);
+
+        if (cls.expansion && cls.launch) {
+          const h4 = document.createElement("h4");
+          h4.textContent = "Available via expansion at launch!";
+          container.appendChild(h4);
+        }
+
+        const p = document.createElement("p");
+        p.textContent = cls.summary;
+        container.appendChild(p);
+      }
+    };
+
+    listClasses();
+
+    const spoilerFacts = [
+      "The villain is your long-lost sibling.",
+      "The sword from level 1 unlocks the final gate.",
+      "Your future self is the last boss.",
+      "Every time you respawn, reality shifts.",
+      "NPCs evolve based on your choices.",
+      "Your pet becomes a raid boss.",
+      "You were never the hero.",
+      "Time loops are secretly changing you.",
+      "The final mission is in a dream.",
+      "Your rival becomes your mentor."
+    ];
+
+    function displaySpoiler() {
+      const index = Math.floor(Math.random() * spoilerFacts.length);
+      document.getElementById("spoiler-display").textContent = spoilerFacts[index];
+    }
+
+    document.getElementById("spoiler-btn").addEventListener("click", displaySpoiler);
+
+    let people = [
+      { name: "Ron Ronaldson", age: 42, member: true, faveGame: "Elden Ring" },
+      { name: "Lisa King", age: 24, member: true, faveGame: "Hello Kitty vs. Vampire Hunter D" },
+      { name: "Chet Baker", age: 94, member: false, faveGame: "MS97 Spider Solitaire" },
+      { name: "Sonny Rollins", member: true, faveGame: "Bart Simpson vs. the Space Mutants" },
+      { name: "Peanut Bailey", age: 11, member: false, faveGame: "Stray" },
+      { name: "Cannonball Adderley", age: 31, member: true, faveGame: "Guitar Hero" }
+    ];
+
+    const newDev = {
+      name: "Miles Davis",
+      age: 29,
+      member: true,
+      faveGame: "Super Mario Odyssey"
+    };
+    people.push(newDev);
+
+    for (let i = 0; i < people.length; i++) {
+      if (typeof people[i].name === "string") {
+        people[i].name = people[i].name.split(" ")[0];
+      }
+    }
+
+    function displayRoster() {
+      const container = document.getElementById("roster");
+      for (const person of people) {
+        const div = document.createElement("div");
+        div.className = "person";
+        const ageText = person.age ? `${person.age} years old` : "an unknown age";
+        const memberText = person.member ? "is a member" : "is not a member";
+        div.textContent = `${person.name} is ${ageText} and ${memberText}. Their favorite game is ${person.faveGame}.`;
+        container.appendChild(div);
+      }
+    }
+
+    document.getElementById("create-roster").addEventListener("click", displayRoster);
+
+    /*
+    people.forEach(person => {
+      const div = document.createElement("div");
+      div.className = "person";
+      const ageText = person.age ? `${person.age} years old` : "an unknown age";
+      const memberText = person.member ? "is a member" : "is not a member";
+      div.textContent = `${person.name} is ${ageText} and ${memberText}. Their favorite game is ${person.faveGame}.`;
+      document.getElementById("roster").appendChild(div);
+    });
+    */
+  </script>
+</body>
+</html>
+

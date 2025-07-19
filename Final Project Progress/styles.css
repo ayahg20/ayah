@@ -1,0 +1,35 @@
+/* QUESTION: Is it okay that I changed the font to 'Comic Sans MS', cursive, sans-serif to give the game a more playful baking vibe? */
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffe4f0; 
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #d63384; 
+}
+
+input, select, button {
+  margin: 10px;
+  padding: 8px;
+  border: 2px solid #ff69b4; 
+  border-radius: 8px;
+  background-color: #fff0f5; 
+}
+
+button {
+  background-color: #ff85c1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff5eae;
+}
+
+p {
+  color: #cc0077;
+}

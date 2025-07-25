@@ -1,0 +1,83 @@
+/*  Bake-Off Challenge, Ayah Ghazouli, July 24, 2025 */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffe4f0;
+  padding: 20px;
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+header, footer {
+  background-color: #d63384;
+  color: white;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+input, select, button {
+  margin: 10px;
+  padding: 8px;
+  border: 2px solid #ff69b4;
+  border-radius: 8px;
+  background-color: #fff0f5;
+}
+
+button {
+  background-color: #ff85c1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff5eae;
+}
+
+.logo {
+  width: 150px;
+  transition: transform 0.3s;
+  max-width: 100%;
+}
+
+.logo:hover {
+  transform: rotate(10deg);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.1em;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  input, select, button {
+    width: 100%;
+  }
+  .logo {
+    width: 100px;
+  }
+}
+.correct {
+  color: green;
+  font-weight: bold;
+  background-color: #e0ffe0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
